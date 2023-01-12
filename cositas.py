@@ -28,11 +28,17 @@ class Directory(Archivo):
     def __str__(self):
         for i in self.list:
             print(i.__str__())
-
+    
+    def user(self):
+        if self.weight < 10:
+            print("Archivo de baja categoria")
+        else:
+            print("Archivo extenso")
 
 
 development = Directory()
 
 development.add_file(12,"TXT","Python")
 development.add_file(23,"TXT","C++")
+development.add_file(43,"ORG","Js")
 development.__str__()
