@@ -1,5 +1,5 @@
 
-class archivo:
+class Archivo:
 
     def __init__(self, weight, type, lenguage):
         self.weight = weight
@@ -8,11 +8,31 @@ class archivo:
 
     
     def __str__(self):
-        s = f"Program lenguage: {self.lenguage}\nType of file: {self.type}\nWeight: {self.weight}"
+        s = f"Program lenguage: {self.lenguage}\nType of file: {self.type}\nWeight: {self.weight}\n"
         return s
 
 
-class directory(archivo):
+class Directory(Archivo):
 
-    def __init__(self, weight, n_files):
+    def __init__(self):
+        self.list = []
         
+
+    def add_file(self, weight, type, lenguage):
+        file = Archivo(weight, type, lenguage)
+        file.lenguage = lenguage
+        file.type = type
+        file.lenguage = lenguage
+        self.list.append(file)
+    
+    def __str__(self):
+        for i in self.list:
+            print(i.__str__())
+
+
+
+development = Directory()
+
+development.add_file(12,"TXT","Python")
+development.add_file(23,"TXT","C++")
+development.__str__()
