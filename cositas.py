@@ -30,9 +30,7 @@ class Directory(Archivo):
             print(i.__str__())
     
     def user(self):
-        for i in self.list:
-            if i.weight < 10:
-                print("Archivo de baja categoria")
+        print("Hello world, jajajajaj")
 
 development = Directory()
 
