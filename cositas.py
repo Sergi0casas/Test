@@ -29,14 +29,14 @@ class Directory(Archivo):
         for i in self.list:
             print(i.__str__())
     
-    def user(self):
-        print("Hello world, jajajajaj")
-        print("This a change on branch development")
+    def user(self, name):
+        print("Hello world, jajajajaj ", name)
+        print("This a change on branch development ", name)
 
 development = Directory()
 
 development.add_file(12,"TXT","Python")
 development.add_file(23,"TXT","C++")
 development.add_file(43,"ORG","Js")
-development.user()
+development.user("pedro")
 development.__str__()
