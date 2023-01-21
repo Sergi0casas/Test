@@ -30,11 +30,7 @@ class Directory(Archivo):
             print(i.__str__())
     
     def user(self, name):
-<<<<<<< HEAD
         print("Hello world mi leader you are the beest of the world MR. ", name)
-=======
-        print("Hello world, babys this a new change", name)
->>>>>>> development
         print("This a change on branch development ", name)
 
 development = Directory()
