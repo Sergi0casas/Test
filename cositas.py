@@ -24,6 +24,10 @@ class Directory(Archivo):
         file.type = type
         file.lenguage = lenguage
         self.list.append(file)
+
+    def delete_user(self,user):
+        if user in self.list:
+            self.list.remove(user)
     
     def __str__(self):
         for i in self.list:
